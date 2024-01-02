@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adivina la Cantidad de Emojis</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="contenedor">
+
+            <div class="contenedor-juego">
+                <div class="contenedor-titulo seccion">
+                    <h1>¿CUÁNTAS VECES APARECERÁ TU EMOJI? 😃</h1>
+                </div>
+    
+                <div class="contenedor-seleccion seccion">
+                    <p class="texto-parrafo">Selecciona un Emoji:</p>
+                    <div class="contenedor-emoji">
+                        <img id="estrella" class="emoji" src="assets/img/estrella.png" alt="Estrella">
+                        <img id="arbol" class="emoji" src="assets/img/arbol-navidad.png" alt="Árbol de Navidad">
+                        <img id="santa" class="emoji" src="assets/img/santa-claus.png" alt="Santa Claus">
+                        <img id="regalo" class="emoji" src="assets/img/regalo.png" alt="Regalo">
+                    </div>
+                </div>
+    
+                <form class="contenedor-cantidad seccion">
+                    <div>
+                        <label for="input-cantidad" class="texto-parrafo">Ingresa la cantidad de veces que crees que aparecerá el Emoji:</label>
+                        <input type="text" id="input-cantidad" title="Ingresa un número del 0 al 16">
+
+                        <div id="mensaje-error">
+                            <p id="parrafo-mensaje"></p>
+                        </div>
+                    </div>
+                    <button id="boton-generar">Generar Matriz</button>
+
+                    <div id="mensaje-verificacion">
+                        <p id="parrafo-verificacion"></p>
+                    </div>
+
+                </form>
+    
+                <!-- Este div es el que aparecerá al presionar el boton CREAR MATRIZ 4X4-->
+                <div class="contenedor-matriz seccion">
+                    <h2 id="titulo-matriz">Matriz de Emojis</h2>
+                    <div class="contenedor-4x4">
+                        <table>
+                            <tr class="fila">
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                            </tr>
+                            <tr class="fila">
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                            </tr>
+                            <tr class="fila">
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                            </tr>
+                            <tr class="fila">
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                                <td><img class="emoji-matriz" src="" alt="Emoji"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

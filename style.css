@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luxurious Roman', serif;
+}
+
+body {
+    background-image: url(assets/img/fondo-navidad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-parrafo {
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+}
+
+.contenedor-juego {
+    margin: 5%x 0;
+    padding: 15px 20px;
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.4rem);
+    display: flex;
+    flex-direction: column;
+}
+
+/*Excluyo a "contenedor-matriz" porque él será quién varíe su valor del "display"; de "none" a "flex" y de "flex" a "none"*/
+.contenedor-juego > .seccion:not(.contenedor-matriz) {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.contenedor-titulo {
+    font-size: 0.9rem;
+}
+
+.contenedor-seleccion p {
+    margin-bottom: 15px;
+}
+
+.contenedor-emoji {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.emoji {
+    width: 12%;
+    cursor: pointer;
+}
+
+.emoji:not(.emoji:last-child) { /*Hago que Todos los Emojis, menos el último tengan un margin derecho de 10px*/
+    margin-right: 10px;
+}
+
+.contenedor-cantidad div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-cantidad {
+    width: 10%;
+    min-width: 10%;
+    margin-top: 15px;
+    outline: none;
+    padding: 3px 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(91, 181, 216, 0.3);
+    color: rgb(6, 68, 93);
+    font-weight: bold;
+}
+
+#input-cantidad:focus {
+    caret-color: rgb(6, 68, 93);
+    border: 2px solid rgb(6, 68, 93);
+}
+
+#mensaje-error {
+    display: none;
+    /* margin-top: 15px; */
+    border: 1px solid white;
+    background: linear-gradient(to bottom, #87CEEB, #ffffff, #ADD8E6);
+    position: fixed;
+    top: 40%;
+    padding: 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#boton-generar {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    color: rgb(6, 68, 93);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#mensaje-verificacion {
+    display: none;
+    position: fixed;
+    border: 1px solid white;
+    background: linear-gradient(to bottom, #4E7E8F, #ffffff, #5C8AA2);
+    padding: 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#boton-generar:hover {
+    background-color: rgba(91, 181, 216, 0.75);
+}
+
+#titulo-matriz {
+    margin-bottom: 10px;
+}
+
+.contenedor-4x4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-matriz {
+    display: none;
+    text-align: center;
+    padding: 15px;
+}
+
+td {
+    padding: 5px;
+}
+
+
+
