@@ -9,7 +9,6 @@ body {
     background-image: url(assets/img/fondo-navidad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
 
 .contenedor {
@@ -30,7 +29,6 @@ body {
 .contenedor-juego {
     margin: 5%x 0;
     padding: 15px 20px;
-    /* border: 1px solid red; */
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.4rem);
@@ -40,7 +38,6 @@ body {
 
 /*Excluyo a "contenedor-matriz" porque él será quién varíe su valor del "display"; de "none" a "flex" y de "flex" a "none"*/
 .contenedor-juego > .seccion:not(.contenedor-matriz) {
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
